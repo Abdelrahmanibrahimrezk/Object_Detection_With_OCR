@@ -28,3 +28,17 @@ Here we will use Google colab and there is some specification to run it.
   !pip install Pillow==5.3.0
   ```
   
+### Run
+
+  ```sh
+  !python Image_object_detection.py --prototxt MobileNetSSD_deploy.prototxt.txt --model MobileNetSSD_deploy.caffemodel --image aa.jpg
+  ```
+  
+### Display Output
+
+  ```sh
+  from google.colab.patches import cv2_imshow
+  import cv2
+  img = cv2.imread('out.jpg')
+  cv2_imshow(img)
+  ```
