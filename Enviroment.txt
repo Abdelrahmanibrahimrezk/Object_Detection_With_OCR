@@ -1,0 +1,11 @@
+!sudo apt update
+
+!sudo apt install tesseract-ocr
+
+!sudo apt install libtesseract-dev
+
+!pip install pytesseract
+
+!pip uninstall -y Pillow
+# install the new one
+!pip install Pillow==5.3.0
